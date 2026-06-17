@@ -1,4 +1,3 @@
-import {FaShoppingCart, FaUser, FaHeart, FaHooli} from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState} from "react";
 import {BiMenu} from "react-icons/bi";

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {ArrowDown, ArrowDown01Icon, ArrowDownCircle, CalendarArrowDown} from "lucide-react";
+import {ArrowDown} from "lucide-react";
 
 const Reserve = () => {
     interface Selection{
@@ -8,13 +8,13 @@ const Reserve = () => {
         time: string;
     }
 
-    const selections = {
-        dates: [
-            ""
-        ]
-    }
+    // const selections = {
+    //     dates: [
+    //         ""
+    //     ]
+    // }
 
-    const [ reservationData, setReservationData ] = useState<Selection>({
+    const [ reservationData, ] = useState<Selection>({
         count: 1,
         date: "",
         time: "",

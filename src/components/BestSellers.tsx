@@ -1,73 +1,69 @@
-import { FaHeart, FaCartPlus} from "react-icons/fa";
-import { Link } from "react-router-dom";
-import {useState} from "react";
 
 const BestSellers = () => {
 
-    interface BestSeller{
-        name: string;
-        starRating: number;
-        type: string;
-        description: string;
-        imgUrl: string;
-        colours: string[]
-    }
-
-    const bestSellers:BestSeller[] = [
-        {
-            name: "Pink-Purple",
-            starRating: 5,
-            type: "Drink Bottle",
-            description: "",
-            imgUrl: "/bottle1.png",
-            colours: [
-                "bg-purple-",
-                "bg-neutral-300",
-                "bg-pink-500",
-                "bg-neutral-400",
-                "bg-pink-300",
-            ]
-        },{
-            name: "Orange-Green",
-            starRating: 5,
-            type: "Drink Bottle",
-            description: "",
-            imgUrl: "/bottle2.png",
-            colours: [
-                "bg-brown-300",
-                "bg-orange-500",
-                "bg-green-300",
-            ]
-        },{
-            name: "Black-White",
-            starRating: 5,
-            type: "Drink Bottle",
-            description: "",
-            imgUrl: "/bottle3.png",
-            colours: [
-                "bg-neutral-100",
-                "bg-neutral-900",
-            ]
-        },{
-            name: "",
-            starRating: 5,
-            type: "Drink Bottle",
-            description: "",
-            imgUrl: "public/bottle1.png",
-            colours: [
-                "bg-purple-200",
-                "bg-neutral-300",
-                "bg-pink-500",
-                "bg-pink-500",
-                "bg-pink-300",
-            ]
-        },
-    ]
-
-    const [wishList, setWishList] = useState<BestSeller[]>([]);
-
-    const [imgHover, setImgHover] = useState<number>(-1);
-
+    // interface BestSeller{
+    //     name: string;
+    //     starRating: number;
+    //     type: string;
+    //     description: string;
+    //     imgUrl: string;
+    //     colours: string[]
+    // }
+    //
+    // const bestSellers:BestSeller[] = [
+    //     {
+    //         name: "Pink-Purple",
+    //         starRating: 5,
+    //         type: "Drink Bottle",
+    //         description: "",
+    //         imgUrl: "/bottle1.png",
+    //         colours: [
+    //             "bg-purple-",
+    //             "bg-neutral-300",
+    //             "bg-pink-500",
+    //             "bg-neutral-400",
+    //             "bg-pink-300",
+    //         ]
+    //     },{
+    //         name: "Orange-Green",
+    //         starRating: 5,
+    //         type: "Drink Bottle",
+    //         description: "",
+    //         imgUrl: "/bottle2.png",
+    //         colours: [
+    //             "bg-brown-300",
+    //             "bg-orange-500",
+    //             "bg-green-300",
+    //         ]
+    //     },{
+    //         name: "Black-White",
+    //         starRating: 5,
+    //         type: "Drink Bottle",
+    //         description: "",
+    //         imgUrl: "/bottle3.png",
+    //         colours: [
+    //             "bg-neutral-100",
+    //             "bg-neutral-900",
+    //         ]
+    //     },{
+    //         name: "",
+    //         starRating: 5,
+    //         type: "Drink Bottle",
+    //         description: "",
+    //         imgUrl: "public/bottle1.png",
+    //         colours: [
+    //             "bg-purple-200",
+    //             "bg-neutral-300",
+    //             "bg-pink-500",
+    //             "bg-pink-500",
+    //             "bg-pink-300",
+    //         ]
+    //     },
+    // ]
+    //
+    // const [wishList, setWishList] = useState<BestSeller[]>([]);
+    //
+    // const [imgHover, setImgHover] = useState<number>(-1);
 
     // return (
     //     <section className="relative h-fit flex flex-col items-center justify-start px-5 pt-10 lg:px-20">

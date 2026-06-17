@@ -71,7 +71,7 @@ const Menu = () => {
         }
     ]
 
-    const [ filteredMenuItems, setFilteredMenuItems ] = useState<MenuItem[]>(menuItems);
+    const [ , setFilteredMenuItems ] = useState<MenuItem[]>(menuItems);
     const [ selectedMenuCategory, setSelectedMenuCategory ] = useState<string>("All");
     const [ hoveredMenuItem, setHoveredMenuItem ] = useState<string>("");
 

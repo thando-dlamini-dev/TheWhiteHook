@@ -1,7 +1,6 @@
 import {CgFacebook, CgInstagram} from "react-icons/cg";
-import {BiLogoTiktok, BiPaperPlane} from "react-icons/bi";
+import {BiLogoTiktok} from "react-icons/bi";
 import { Link } from "react-router-dom";
-import {useState} from "react";
 import {
     GiFishingHook,
 } from "react-icons/gi";
@@ -18,11 +17,11 @@ const Footer = () => {
         links: Link[]
     }
 
-    const [email, setEmail] = useState("");
+    // const [email, setEmail] = useState("");
 
-    const sendEmail = async (Email: string) => {
-        // await fetch
-    }
+    // const sendEmail = async (Email: string) => {
+    //     // await fetch
+    // }
     const linkCategories: LinkCategories[] = [
         {
             title: "Customer Service",
@@ -109,14 +108,12 @@ const Footer = () => {
                 </h2>
                 <div className="w-150 h-fit flex items-center justify-between gap-5">
                     <input placeholder="Enter your email"
-                           className="bg-white text-black w-2/3 pl-4 rounded-lg h-10 my-5"
-                           onChange={(e) => setEmail(e.target.value)} type="email"/>
-                    <button
-                        onClick={() => sendEmail(email)}
-                        className="w-1/3 h-10 text-white flex items-center justify-center gap-2  bg-neutral-700 rounded-lg">
-                        Submit
-                        <BiPaperPlane className=""/>
-                    </button>
+                           className="bg-white text-black w-2/3 pl-4 rounded-lg h-10 my-5"/>                    {/*<button*/}
+                    {/*    onClick={() => sendEmail(email)}*/}
+                    {/*    className="w-1/3 h-10 text-white flex items-center justify-center gap-2  bg-neutral-700 rounded-lg">*/}
+                    {/*    Submit*/}
+                    {/*    <BiPaperPlane className=""/>*/}
+                    {/*</button>*/}
                 </div>
             </div>
             <div className="w-full mb-10 h-fit flex flex-col lg:flex-row gap-10 items-start justify-between">

@@ -1,5 +1,4 @@
-import {useState, useEffect} from "react";
-import {Link} from "react-router-dom";
+import {useState} from "react";
 
 const HeroSection = () => {
     const duration = 3000;
@@ -16,8 +15,8 @@ const HeroSection = () => {
         "photo-1618798387548-f94063632035.avif"
     ];
 
-    const [count, setCount] = useState<number>(0);
-    const [state, setState] = useState<boolean>(true);
+    const [count, ] = useState<number>(0);
+    const [state, ] = useState<boolean>(true);
 
     // useEffect(() => {
     //
@@ -42,8 +41,8 @@ const HeroSection = () => {
                         Make a moment at TheWhiteHook
                     </h1>
                     <div className={`w-fit font-sans h-fit flex items-center justify-center gap-3`}>
-                        <button onClick={() => scrollToSection("#order")} className={`px-4 py-3 cursor-pointer hover:scale-105 duration-300 ease-in-out transition-all bg-black rounded-full text-white shadow-lg`}>Place Order</button>
-                        <button onClick={() => scrollToSection("#menu")} className={`px-4 py-3 cursor-pointer hover:scale-105 duration-300 ease-in-out transition-all bg-accent rounded-full text-black font-semibold border-0 shadow-lg border-neutral-300`}>View Menu</button>
+                        <button className={`px-4 py-3 cursor-pointer hover:scale-105 duration-300 ease-in-out transition-all bg-black rounded-full text-white shadow-lg`}>Place Order</button>
+                        <button className={`px-4 py-3 cursor-pointer hover:scale-105 duration-300 ease-in-out transition-all bg-accent rounded-full text-black font-semibold border-0 shadow-lg border-neutral-300`}>View Menu</button>
                     </div>
                 </div>
 
