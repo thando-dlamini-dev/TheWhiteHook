@@ -1,24 +1,5 @@
-import { useState } from "react";
-import {ArrowDown} from "lucide-react";
 
 const Reserve = () => {
-    interface Selection{
-        count: number;
-        date: string;
-        time: string;
-    }
-
-    // const selections = {
-    //     dates: [
-    //         ""
-    //     ]
-    // }
-
-    const [ reservationData, ] = useState<Selection>({
-        count: 1,
-        date: "",
-        time: "",
-    })
 
     return(
         <section className={`h-screen bg-accen flex flex-col items-center justify-start pt-20 gap-10`}>
