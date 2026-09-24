@@ -25,18 +25,19 @@ const Faq = () => {
     const [ activeFaq, setActiveFaq ] = useState<Faq>();
 
     return (
-        <section className={`h-screen flex lg:flex-row flex-col items-center gap-20 justify-center lg:px-40`}>
-            <div className={`w-1/3 text-black flex flex-col items-start justify-center gap-10`}>
+        <section className={`h-screen py-30 flex lg:flex-row flex-col items-center justify-between`}>
+            <div className={`w-1/2 h-full text-white px-20 bg-accent2 flex flex-col items-start justify-center gap-10`}>
                 <h3 className={`text-accent uppercase text-2xl`}>faq</h3>
-                <h1 className={`font-roxale-story-regular font-bold text-5xl`}>Answers For Questions</h1>
-            </div>
-            <div className={`w-1/2 flex flex-col items-start justify-center gap-10`}>
+                <h1 className={`font-roxale-story-regular font-bold text-5xl pb-10`}>Answers For Your Questions</h1>
                 {faqs.map((faq, index) => (
-                    <div onClick={() => setActiveFaq(faq)} key={index} className={`w-full cursor-pointer h-fit ${activeFaq?.title === faq.title ? "border-b-2" : "border-b-1"} pb-3 border-black`}>
-                        <span className={`text-3xl font-roxale-story-regular ${activeFaq?.title === faq.title ? "mb-5 text-accent" : "text-black"}`}>{faq.title}</span>
+                    <div onClick={() => setActiveFaq(faq)} key={index} className={`w-full cursor-pointer h-fit ${activeFaq?.title === faq.title ? "border-b-" : "border-b-"} pb-3 border-neutral-700`}>
+                        <span className={`text-3xl font-roxale-story-regular ${activeFaq?.title === faq.title ? "mb-5 text-accent" : "text-neutral-200"}`}>{faq.title}</span>
                         <p className={`transition-all duration-500 ease-in-out ${activeFaq?.title === faq.title ? "text-xl py-5" : "text-[0px] py-0"}`}>{faq.description}</p>
                     </div>
                 ))}
+            </div>
+            <div className={`w-1/2 h-full relative overflow-clip flex flex-col items-start justify-center gap-10`}>
+                <img className="w-full h-full object-cover" src="/photo-1772352214475-12f9a75618d8.avif" alt=""/>
             </div>
         </section>
     )

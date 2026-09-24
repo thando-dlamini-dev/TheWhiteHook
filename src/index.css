@@ -2,7 +2,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-accent: #e8d8bd;
+  --color-accent: #c3ac84;
+  --color-accent2: #937656;
   --color-background: #e8d8bd;
   --font-roxale-story-regular: "Roxale-Story-Regular"
 }

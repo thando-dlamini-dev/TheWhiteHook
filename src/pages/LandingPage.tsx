@@ -10,8 +10,8 @@ const LandingPage = () => {
         <main className='overflow-hidden'>
             <HeroSection/>
             <Menu/>
-            <OurValues/>
             <Faq/>
+            <OurValues/>
             <Reserve/>
             {/* Social Proof */}
             {/* Ingredients */}

@@ -5,6 +5,9 @@ const HeroSection = () => {
 
 
     const images = [
+        "Variety-Cruises-Dining-1920x1080-1.jpg",
+        "JNcnusx84JRNjqL3Nwfo3a.jpg",
+        "The_Latnern_Room_at_Dusk___Ron_Starr.webp",
         "fishRestaurant3.jpg",
         "fishRestaurant2.jpg",
         "fishRestaurant1.jpg",
@@ -33,7 +36,7 @@ const HeroSection = () => {
     return (
         <section className="h-screen pb-22 flex flex-col-reverse lg:pt-0 lg:flex-row items-start pt-22 justify-center">
             <div className={`w-full relative h-full overflow-hidden flex items-center justify-center`}>
-                <div className={`w-full flex flex-col items-center z-10 justify-center font-roxale-story-regular bg-black/30 h-full`}>
+                <div className={`w-full flex flex-col items-center z-10 justify-center font-roxale-story-regular bg-black/10 h-full`}>
                     <h1 className={`text-white p-5 rounded-2xl z-10 text-3xl lg:text-6xl`}>
                         {/*{state? "true " : "false "}*/}
                         {/*Savor the exquisite*/}
@@ -41,8 +44,8 @@ const HeroSection = () => {
                         Make a moment at TheWhiteHook
                     </h1>
                     <div className={`w-fit font-sans h-fit flex items-center justify-center gap-3`}>
-                        <button className={`px-4 py-3 cursor-pointer hover:scale-105 duration-300 ease-in-out transition-all bg-black rounded-full text-white shadow-lg`}>Place Order</button>
-                        <button className={`px-4 py-3 cursor-pointer hover:scale-105 duration-300 ease-in-out transition-all bg-accent rounded-full text-black font-semibold border-0 shadow-lg border-neutral-300`}>View Menu</button>
+                        <button className={`px-4 py-3 cursor-pointer hover:scale-105 duration-300 ease-in-out transition-all bg-black rounded-lg text-white shadow-lg`}>Place Order</button>
+                        <button className={`px-4 py-3 cursor-pointer hover:scale-105 duration-300 ease-in-out transition-all bg-accent rounded-lg text-black font-semibold border-0 shadow-lg border-neutral-300`}>View Menu</button>
                     </div>
                 </div>
 
